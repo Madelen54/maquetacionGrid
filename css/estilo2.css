@@ -1,0 +1,59 @@
+.contenedor{/*padre en en padre utilizamos propiedades de grid templete */
+    background-color: aquamarine;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 1fr 2fr  2fr 3fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-areas:"header header header header"
+                        "nav    nav    nav nav"
+                        "section section section  ads"  
+                        "foter foter foter foter";
+}
+.contenedor .header{
+    background-color: blueviolet;
+    grid-column: header;
+}
+.contenedor .nav{
+    background-color: chartreuse;
+    grid-column: nav;
+}
+.contenedor .section{
+    background-color: rgb(241, 101, 20);
+    grid-column: section;
+}
+.section{
+    display: flex;
+
+}
+.cont{
+    width: 455px;
+    height: 300px;
+    background-color:rgb(230, 227, 224);
+    margin:5px;
+}
+.contenedor .ads{
+    background-color: brown;
+    grid-column: ads;
+   
+}
+.hijo1{
+    background-color: blanchedalmond;
+    margin: 20px;
+    border-radius: 10px;
+    height: 120px;
+    
+}
+.hijo2{
+    background-color: bisque;
+    margin: 20px;
+    height:120px;
+    border-radius: 10px;
+}
+
+.contenedor .foter{
+    background-color: cornflowerblue;
+    grid-column: foter;
+}
